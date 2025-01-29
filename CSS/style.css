@@ -9,8 +9,8 @@
   height: 20px;
   background-color: white;
 }
-.nav-design{
-  border-radius: 10px;
+.nav-design i{
+  display: none;
 }
 .navbar .logo {
   display: flex;
@@ -190,11 +190,9 @@ h4{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  /* margin-top: 100px; */
   margin-bottom: 50px;
 }
 .story-1{
-  /* border: 2px solid tomato; */
   gap: 20px;
   border-radius: 10px;
   background-color: #FFFFFF;
@@ -273,7 +271,6 @@ h4{
 /* footer design */
 .footer{
   background-color: #01ACFD;
-  /* margin-left: 100px; */
   margin-top: 100px;
   padding-top: 70px;
   margin-bottom: 100px;
@@ -328,32 +325,34 @@ h4{
  /* Mobaile phone uses response design */
 
  @media screen and (max-width:576px) {
-  
+   .nav-design i{
+    margin-left: 150px;
+    display: block;
+  }
+  .navbar a{
+    display: none;
+  }
+  .contact-btn{
+     display: none;
+  }
   .banner-container{
       display: flex;
       flex-direction: column-reverse; 
-     
   }
-
   .banner-description {
     max-width: 400px;
      margin-right: 50px;
   }
-
   .banner-image {
       display: flex;
       max-width: 500px;
       margin: none;
   }
-
   .banner-image img {
       max-width: 80%;
       height: auto;
   }
-
-
   /* curriculum responsive design */
-
   .card{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -361,8 +360,6 @@ h4{
   .arrow{
     display: none;
   }
-
-
   story part responsive design */
   .story-container{
     margin: auto;
@@ -385,13 +382,5 @@ h4{
   .footer-card-3 img {
       margin: 5px;
   }
-
-  /* navbar design responsive */
-  .navbar a{
-    display: none;
-  }
-  .contact-btn{
-     display: none;
-  }
-  
 }
+
